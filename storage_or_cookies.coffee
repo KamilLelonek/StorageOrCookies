@@ -62,21 +62,21 @@ class @Storage
 
 class @Persistency
   @set : (key, value) ->
-    if Cookies.enabled()
-      Cookies.set(key, value)
-      Cookies.set("_#{key}", Date.now())
-    else if Storage.enabled()
+    if Storage.enabled()
       Storage.set(key, value)
       Storage.set("_#{key}", Date.now())
+    else if Cookies.enabled()
+      Cookies.set(key, value)
+      Cookies.set("_#{key}", Date.now())
 
   @get : (key) ->
-    return Cookies.get key if Cookies.enabled() and not Storage.enabled()
     return Storage.get key if Storage.enabled() and not Cookies.enabled()
+    return Cookies.get key if Cookies.enabled() and not Storage.enabled()
     if Storage.enabled() and Cookies.enabled()
-      cookieVal  = Cookies.get key
       storageVal = Storage.get key
-      return cookieVal if cookieVal and not storageVal
-      return storageVal if storageVal and not storageVal
+      cookieVal  = Cookies.get key
+      return storageVal if storageVal and not cookieVal
+      return cookieVal  if cookieVal  and not storageVal
       if storageVal and cookieVal
         cookieTime  = parseInt(Cookies.get "_#{key}")
         storageTime = parseInt(Storage.get "_#{key}")
