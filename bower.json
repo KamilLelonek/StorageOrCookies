@@ -1,10 +1,10 @@
 {
-    "name": "CookiesOrStorage",
+    "name": "storage-or-cookies",
     "version": "1.3.0",
-    "main": "cookies_or_storage.min.js",
+    "main": "storage_or_cookies.min.js",
     "ignore": [
-        "cookies_or_storage.coffee",
-        "cookies_or_storage.js",
+        "storage_or_cookies.coffee",
+        "storage_or_cookies.js",
         ".gitignore",
         "bower.json"
     ]

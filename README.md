@@ -4,8 +4,8 @@
 
 ## Usage
 
-This library offers 2 types of persistency: `Cookies` or `LocalStorage`. They can be used independly.<br>
-`Persistency` object manages persistency in `Cookies` with `LocalStorage` fallback if cookies are disabled.
+This library offers 2 types of persistency: `LocalStorage` and `Cookies`. They can be used independly.<br>
+`Persistency` object manages persistency in `LocalStorage` with `Cookies` fallback if LocalStorage is disabled.
 
 Save data:
 ```

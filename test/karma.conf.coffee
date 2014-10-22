@@ -10,7 +10,7 @@ module.exports = (config) ->
       transformPath : (path) ->
         path.replace /\.coffee$/, '.js'
     files : [
-      '../cookies_or_storage.js'
+      '../storage_or_cookies.js'
       '*.coffee'
     ]
     browsers : ['Chrome']

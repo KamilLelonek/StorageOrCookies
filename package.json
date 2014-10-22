@@ -1,27 +1,26 @@
 {
-  "author": "Kamil Lelonek",
-  "name": "cookies-or-storage",
-  "description": "Persistency library for saving cookies with LocalStorage fallback",
-  "version": "1.3.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/KamilLelonek/CookiesOrStorage"
-  },
-  "scripts": {
-    "test": "node_modules/.bin/karma start test/karma.conf.coffee"
-  },
-  "dependencies": {
-    "karma": "~0.12.0",
-    "karma-coffee-preprocessor": "~0.1",
-    "karma-coverage": "0.2.1",
-    "karma-growl": "0.1.0",
-    "karma-junit-reporter": "0.2.1",
-    "karma-jasmine": "~0.2.0",
-    "coffee-script": "^1.7.1",
-    "karma-chrome-launcher": "^0.1.2"
-  },
-  "devDependencies": {
-    "karma": "^0.12.21",
-    "karma-jasmine": "^0.2.2"
-  }
+    "author": "Kamil Lelonek",
+    "name": "storage-or-cookies",
+    "description": "Persistency library for saving LocalStorage with Cookies fallback",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/KamilLelonek/StorageOrCookies"
+    },
+    "scripts": {
+        "test": "node_modules/karma/bin/karma start test/karma.conf.coffee"
+    },
+    "dependencies": {
+        "coffee-script": "^1.7.1"
+    },
+    "devDependencies": {
+        "karma": "^0.12.0",
+        "karma-coffee-preprocessor": "^0.1",
+        "karma-coverage": "^0.2.1",
+        "karma-growl": "^0.1.0",
+        "karma-junit-reporter": "^0.2.1",
+        "karma-jasmine": "^0.2.0",
+        "karma-jasmine": "^0.2.2",
+        "karma-chrome-launcher": "^0.1.2"
+    }
 }
