@@ -1,0 +1,5 @@
+*.map
+*.html
+/node_modules
+test/test-results.xml
+test/coverage
